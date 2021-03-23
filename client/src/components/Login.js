@@ -6,10 +6,12 @@ export default function Login({ onIdSubmit }) {
 
   function handleSumbit(e) {
     e.preventDefault();
+    //using useRef hook
     onIdSubmit(idRef.current.value);
   }
 
   return (
+    //using bootstrap container
     <Container
       className="align-items-center d-flex"
       style={{ height: "100vh" }}
