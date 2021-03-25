@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 
 function App() {
   const [id, setId] = useLocalStorage("id");
+  //if user has logged in route to dashboard
   return id ? <Dashboard id={id} /> : <Login onIdSubmit={setId} />;
 }
 

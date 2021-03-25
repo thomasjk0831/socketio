@@ -3,6 +3,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { v4 } from "uuid";
 
 export default function Login({ onIdSubmit }) {
+  //using useref hook to handle input change
   const idRef = useRef();
 
   function handleSumbit(e) {
